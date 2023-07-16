@@ -7,32 +7,26 @@
  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
+	int ones = '0';
+	int tens = '0';
 
-	while (i <= '9')
+	for ((tens = '0'); tens <= '9'; tens++)
 	{
-	while (j <= '9')
+	for ((ones = '0'); ones <= '9'; ones++)
 	{
-		if (!(i > j) || i == j)
+		if (!((ones == tens) ||(tens > ones)))
 			{
-		putchar(i);
-		putchar(j);
-		if (i == '8' && j == '9')
-		{
-			putchar('\n');
-		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(tens);
+		putchar(ones);
 			}
-		j++;
+		if (!((ones == '9') && tens == '8'))
+		{
+		putchar(',');
+		putchar(' ');
+		}
 	}
-		j = '0';
 	}
-			i++;
+	putchar('\n');
 	return (0);
-}
+	}
 
