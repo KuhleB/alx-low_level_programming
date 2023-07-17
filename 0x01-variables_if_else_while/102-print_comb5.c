@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinaions of two digit number, without error
+ * main - Prints all possible combinaions of two digit number
  *
  * Return: 0 on success
- */
+i */
 int main(void)
 {
 	int i, j;
 
-	for ((i = 0); i <= 100; i++)
+	for ((i = 0); i <= 99; i++)
 	{
-		for ((j = 0); j <= 100; j++)
+		for ((j = 0); j <= 99; j++)
 		{
 			if (i < j && i != j)
 			{
