@@ -3,9 +3,10 @@
 
 /**
  * _abs - Computes the absolute value of an integer
- *
+ * @s: number to be calculated
  * Return: The absolute value of number or 0
  */
+
 int _abs(int s)
 
 {
