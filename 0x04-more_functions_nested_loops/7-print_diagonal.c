@@ -3,6 +3,7 @@
 /**
  * print_diagonal - printing diagonal lines
  * @n: input variable
+ *
  * Return: void
  */
 
@@ -16,7 +17,7 @@ void print_diagonal(int n)
 		{
 			for (j = 0; j < i; j++)
 			{
-				_putchar('_');
+				_putchar(' ');
 			}
 			_putchar('\\');
 			_putchar('\n');
