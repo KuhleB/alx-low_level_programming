@@ -34,7 +34,6 @@ char *str_concat(char *s1, char *s2)
 
 	if (p == NULL)
 	{
-		free(p);
 		return (NULL);
 	}
 	for (c = 0; c < a; c++)
