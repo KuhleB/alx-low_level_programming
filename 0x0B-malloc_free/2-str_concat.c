@@ -14,9 +14,13 @@ char *str_concat(char *s1, char *s2)
 	unsigned int a, b, c, d;
 	char *p;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return ("");
+		s1 = "";
+	} 
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	a = 0;
 	while (s1[a] != '\0')
@@ -36,11 +40,12 @@ char *str_concat(char *s1, char *s2)
 		free(p);
 		return (NULL);
 	}
+	
 	for (c = 0; c < a; c++)
 	{
 		p[c] = s1[c];
 	}
-	for (d = 0; d < b; d++)
+	for (d = 0; d <= b; d++)
 	{
 		p[c] = s2[d];
 		c++;
