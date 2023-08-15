@@ -11,9 +11,9 @@
 
 struct dog
 {
-	char name[20];
+	char name;
 	int age;
-	char owner[20];
+	char owner;
 };
 
 typedef struct dog dog_t;
