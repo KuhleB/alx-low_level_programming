@@ -1,19 +1,20 @@
-#include <stdlib,h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
  * _strlen - returns the length of string
- * @s: string
+ * @d: string
  *
  * Return: the length of the string
  */
+
 int _strlen(char *d)
 {
 	int e;
 
 	e = 0;
 
-	while (s[e] != '\0')
+	while (d[e] != '\0')
 	{
 		e++;
 	}
@@ -41,7 +42,7 @@ char *_strcpy(char *dest, char *src)
 		nam++;
 	}
 
-	for (e = 0; e < len; e++)
+	for (e = 0; e < nam; e++)
 	{
 		dest[e] = src[e];
 	}
